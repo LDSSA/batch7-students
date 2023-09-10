@@ -6,7 +6,7 @@ Your first step in this journey is to **carefully read** the steps in this tutor
 
 - Slack usage and etiquette;
 - How to setup your software environment;
-- The weekly workflow to follow during the LDSSA.
+- The learning unit workflow to follow during the LDSSA.
 
 Everything else you need to know should be [on our wiki](https://ldssa.github.io/wiki/).
 
