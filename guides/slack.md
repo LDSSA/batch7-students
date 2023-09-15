@@ -17,4 +17,4 @@ Slack is our official communication channel. We will announce the release of the
 1. If you want to give feedback post it in the #feedback channel.
 1. Anything not related with the learning materials should go to the #random channel.
 
-See more tips for asking for help on [this wiki page](https://ldssa.github.io/wiki/Starter%20 Academy%20(LDSSA)/How-to-ask-for-and-give-help/).
+See more tips for asking for help on [this wiki page](https://ldssa.github.io/wiki/Starters%20Academy%20(LDSSA)/How-to-ask-for-and-give-help/).
