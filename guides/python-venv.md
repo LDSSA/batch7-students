@@ -1,7 +1,7 @@
 # Creating a Python Virtual Environment
 
 Bellow are the instructions that are enough get you up and running :)
-You can also follow [this guide](guides/How_to_set_up_python_virtual_environments.md) for a more in depth set of instructions that accomplish exactly the same thing.
+You can also follow [this guide](How_to_set_up_python_virtual_environments.md) for a more in depth set of instructions that accomplish exactly the same thing.
 
 :warning: **You should always be using a virtual environment to install python packages.** :warning: Otherwise you can overwrite packages in your system Python installation and break things.
 
