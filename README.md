@@ -37,7 +37,7 @@ Please choose your operating system:
         </a>
     </td>
     <td>
-        <a href="WINDOWS.md">
+        <a href="guides/WINDOWS.md">
             <img src="media/windows.png" alt="Windows" />
         </a>
     </td>
