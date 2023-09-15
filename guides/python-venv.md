@@ -1,45 +1,48 @@
-# Python virtual environment
+# Creating a Python Virtual Environment
 
-Virtual environments are like rooms designed to work on a specific project. For instance, you could have a room for painting with all your painting tools and another room for sewing with all your sewing tools. Each room is like a world on it's own - you go to a specific room to work on a specific project with a specific set of tools.
+Bellow are the instructions that are enough get you up and running :)
+You can also follow [this guide](guides/How_to_set_up_python_virtual_environments.md) for a more in depth set of instructions that accomplish exactly the same thing.
 
-Python virtual environments are like a "room" where you gather all the Python packages that you will need to work on your Python project. You can have many virtual environments on your computer. Every time you work on a project, you activate the corresponding virtual environment with all the necessary software packages. The virtual environments are independent of each other. The advantage is also that your OS Python installation is unaffected - Ubuntu needs Python and if you break your OS Python installation, you can break Ubuntu. Check out more information [here](https://realpython.com/python-virtual-environments-a-primer/#what-is-a-virtual-environment).
+:warning: **You should always be using a virtual environment to install python packages.** :warning: Otherwise you can overwrite packages in your system Python installation and break things.
 
-We will use the `venv` software package to create the virtual environment. The virtual environment will be just a folder on your computer where all the necessary software packages are installed. We will be using the same environment for the whole course and install all the packages at the beginning. (In the Academy, there will be a different virtual environment for each learning unit.)
+You will need a virtual environment for each specialization (S01 - S06). We will use the _venv_ package to create the virtual environment and _pip_ (the reference Python package manager) to install and update packages.
 
-**Step 1:** Start by ensuring that the Python packages `pip`, `setuptools`, and `wheel` are up to date:
-
-```bash
-python3.8 -m pip install --user --upgrade pip setuptools wheel
-```
-
-**Step 2:** Create a virtual environment with the name `prep-venv` in the `.virtualenvs` folder:
+**Step 1** Start by ensuring pip, setuptools, and wheel are up to date:
 
 ```bash
-python3.8 -m venv ~/.virtualenvs/prep-venv
+python3.10 -m pip install --user --upgrade pip setuptools wheel
 ```
 
-**Step 3:** Activate the environment:
+**Step 2** Create a virtual environment with the name `s01` for the specialization S01:
 
 ```bash
-source ~/.virtualenvs/prep-venv/bin/activate
+python3.10 -m venv ~/.virtualenvs/s01
 ```
 
-After you activate your virtual environment you should see at the leftmost of your command line the name of your virtual environment surrounded by parenthesis, like this:
+**Step 3** Activate the environment
 
 ```bash
-`(prep-venv) mig@macbook-pro %`
+source ~/.virtualenvs/s01/bin/activate
 ```
 
-**Step 4:** Update `pip`:
+>Note: after you activate your virtual environment you should see at the left of your command line the name of your virtual environment surrounded by parenthesis, like this:
 
 ```bash
-pip install -U pip
+mig@my-machine % source ~/.virtualenvs/s01/bin/activate
+(s01) mig@my-machine %
 ```
 
-**Step 5:**: Navigate to your workspace folder and install the Python packages from the `requirements.txt` file:
+Now if you use the `which` command it should output the location of your virtual environment's Python installation:
 
 ```bash
-cd ~/projects/ds-prep-workspace
-pip install -r requirements.txt
+(s01) mig@my-machine % which python
+/Users/mig/.virtualenvs/s01/bin/python
 ```
-Congratulations! You are now all set up and you can continue to the last step in the main menu - step 6, testing the weekly workflow with `SLU00 - Jupyter Notebook` from `Week 00`.
+
+**Step 4** Now update pip.
+
+```bash
+(s01) pip install -U pip
+```
+
+And your done!
