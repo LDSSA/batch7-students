@@ -74,7 +74,7 @@ git clone https://github.com/<username>/batch7-workspace.git
 ### 2. Get the Learning Material
 
 Now you will clone the [batch7-students](https://github.com/LDSSA/batch7-students)
-repository. All of the learning material will be made available on this repo
+repository. All the learning material will be made available on this repo
 as the academy progresses.
 
 1. Open a Terminal or Git Bash, the next steps are on this terminal
