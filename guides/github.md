@@ -15,11 +15,11 @@ If you have a _GitHub_ account but git is not set up in your system, complete th
 1. [Adding a new SSH key to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 1. [Testing your SSH connection](https://help.github.com/en/github/authenticating-to-github/testing-your-ssh-connection)
 
-### Set Up Your Workspace Repository
+### 1. Set Up Your Workspace Repository
 
 The workspace directory/repository is where you will place everything you are working on, solve exercises, make changes to files, etc. In this academy that **is a requirement** as it is how you will make your work available to us.
 
-#### Create the Workspace Repository
+#### 1.1 Create the Workspace Repository
 
 1. Log into _GitHub_
 1. Create a new **private** _GitHub_ repository called *batch7-workspace*, see
@@ -31,11 +31,11 @@ If you name it anything else, you will be unable to submit any of your work!
     1. Initialize with a README.
     This is mostly just so that you don't initialize an empty repo.
     1. Add a Python `.gitignore`. :warning:
-    This step is insanely important. If you don't do this, you may check files into the repo that can break the grading process and you will not get any points for your work.
+    **This step is insanely important.** If you don't do this, you may check files into the repo that can break the grading process and you will not get any points for your work.
 
 ![Create Repository](../media/create_repository.png "Create Repository")
 
-#### Add a Deploy Key to your Repository
+#### 1.2 Add a Deploy Key to your Repository
 
 Since your repository is private you will have to explicitly give access to our grading system so that it can fetch material from the repository.
 To do this, you need to add a deploy key to your repository, which we
@@ -53,7 +53,7 @@ copy the deploy key including the `ssh-rsa` part.
 _Portal_
 ![Deploy keys](../media/deploy_key.png "Deploy key")
 
-#### Clone Your Workspace Repository
+#### 1.3 Clone Your Workspace Repository
 
 1. Open a Terminal or Git Bash. The next steps are on this terminal.
 1. Clone your `<username>/batch7-workspace` repository. If you're not sure where to put the repository, you can create a `~/projects` folder, and clone it there.
@@ -71,7 +71,7 @@ If for some reason you don't have the ssh key, do:
 git clone https://github.com/<username>/batch7-workspace.git
 ```
 
-### Get the Learning Material
+### 2. Get the Learning Material
 
 Now you will clone the [batch7-students](https://github.com/LDSSA/batch7-students)
 repository. All of the learning material will be made available on this repo
@@ -82,7 +82,8 @@ as the academy progresses.
 [batch7-students](https://github.com/LDSSA/batch7-students)
 
 ```bash
-git clone git@github.com:LDSSA/batch6-students.git```
+git clone git@github.com:LDSSA/batch7-students.git
+```
 
 Or if you don't have the ssh keys set up:
 
