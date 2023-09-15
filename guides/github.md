@@ -1,108 +1,94 @@
-# 2. Setup _Git_ and _GitHub_
+# Setup _Git_ and _GitHub_
 
-`Git` is a distributed version-control system for tracking changes in source code. A `repository` is where code lives, and the code from the prep course will live at [`ds-prep-course-2023`](https://github.com/LDSSA/ds-prep-course-2023) repository (basically where you are right now, reading this). All the learning materials and exercises will be released (made available) on this repository. You will learn more about `git` in the learning units 3 and 6.
+Having a _GitHub_ account and knowing the basics of committing and pushing changes are **mandatory** for this academy. All the learning materials and exercises will be released on this repository. If you need a refresher on Git, check out the learning units 3 and 6 in our [Python prep course](https://github.com/LDSSA/ds-prep-course-2023).
 
-### 2.1 Sign up for GitHub 
+With this guide, you will set up GitHub, then create and clone your workspace repository and clone the learning material repository (this one).
 
-**Step 1:** [Sign up](https://github.com/join) for a `GitHub` account and follow the instructions.
+To set up GitHub, follow these steps:
 
-**Step 2:** Open a terminal. Configure your email and username by running the 3 commands below. (**replace** `mig.dias.1212@gmail.com` below with the same email you used for github and `buedaswag` with your GitHub username).
+1. If you don't have a _GitHub_ account, [Sign up](https://github.com/join) for _GitHub_.
 
-```bash
-git config --global user.email "mig.dias.1212@gmail.com"
-git config --global user.username "buedaswag"
-git config --global user.name "Bueda Swag"
-```
+If you have a _GitHub_ account but git is not set up in your system, complete the following steps:
 
-### 2.2 Setup your workspace repository
+1. [Checking for existing SSH keys](https://help.github.com/en/github/authenticating-to-github/checking-for-existing-ssh-keys)
+1. [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+1. [Adding a new SSH key to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+1. [Testing your SSH connection](https://help.github.com/en/github/authenticating-to-github/testing-your-ssh-connection)
 
-The workspace directory/repository is where you will place everything you are working on, solve exercises, make changes to files, etc.
+### Set Up your Workspace Repository
 
-**Step 1:** Log into `GitHub`.
+The workspace directory/repository is where you will place everything you are working on, solve exercises, make changes to files, etc. In this academy that **is a requirement** as it is how you will make your work available to us.
 
-**Step 2:** In the upper-right corner of the page, click the "+" button and select `New repository`:
+#### Create the Workspace Repository
 
-<img src='media/menu_create_repository.png' alt='Finder' width="75%" />
+1. Log into _GitHub_
+1. Create a new **private** _GitHub_ repository called *batch7-workspace*, see
+[Creating a new repository](https://help.github.com/en/articles/creating-a-new-repository).
+:warning: The repo **MUST** be named *batchX-workspace* where *X* is the current batch number! 
+If you name it anything else, you will be unable to submit any of your work!
 
-**Step 3:** Create a new **private** repository called `ds-prep-workspace`.
+    1. You need to explicitly select **Private** - This is your work and you will be graded on it, so it should not be open to the world while you are working on it.
+    1. Initialize with a README.
+    This is mostly just so that you don't initialize an empty repo.
+    1. Add a Python `.gitignore`. :warning:
+    This step is insanely important. If you don't do this, you may check files into the repo that can break the grading process and you will not get any points for your work.
 
-1. You need to explicitly select `Private` - this is your private work environment where nobody else will have access but you.
+![Create Repository](../media/create_repository.png "Create Repository")
 
-1. Initialize with a `README`.
+#### Add a Deploy Key to your Repository
 
-1. Add a Python `.gitignore`. This file does exactly what it sounds like - it tells `git` which files to ignore when transfering files between your computer and `GitHub`.
+Since your repository is private you will have to explicitly give access to our grading system so that it can fetch material from the repository.
+To do this, you need to add a deploy key to your repository, which we
+provide to you in our [_Portal_](https://portal.lisbondatascience.org/).
 
-<img src="https://user-images.githubusercontent.com/19359518/112880653-9ef76280-90c2-11eb-8768-00b2153756d5.png" alt='Finder' width="75%">
+1. Go to the [_Portal_](https://portal.lisbondatascience.org/)
+1. Log in with your _GitHub_ account
+1. Go to your [profile](https://portal.lisbondatascience.org/users/info/) and
+copy the deploy key including the `ssh-rsa` part.
+![Profile](../media/profile.png "Profile")
+1. Go back to the repository you have just created
+1. Go to `Settings > Deploy Keys`
+1. Click "Add deploy key" (no need to grant Write Access)
+1. Give it a recognizable name like "grader" and paste the key from the
+_Portal_
+![Deploy keys](../media/deploy_key.png "Deploy key")
 
-You can also check [Creating a new repository](https://help.github.com/en/articles/creating-a-new-repository) on GitHub for help.
+#### Clone Your Workspace Repository
 
-### 2.3 Clone your workspace repository
+1. Open a Terminal or Git Bash. The next steps are on this terminal.
+1. Clone your `<username>/batch7-workspace` repository. If you're not sure where to put the repository, you can create a `~/projects` folder, and clone it there.
 
-Your workspace repository now exists on `GitHub`, but you also need a local copy (clone) on your computer. You will be working in the local repository and then transfer your work to your remote workspace repository on `GitHub`.
-
-**Step 1:** Open a terminal (or use one you've already opened).
-
-**Step 2:** Create a folder named `projects` by using the `mkdir` command. Don't feel intimidated by these commands. They are simply `bash` - a language to communicate with your operating system. `mkdir` essentially stands for **m**a**k**e **dir**ectory. The tilde symbol `~` is a shortcut address for your home directory.
-
-```bash
-mkdir ~/projects
-```
-
-**Step 3:** Enter the folder by using the `cd` command. Did you know that `cd` means **c**hange **d**irectory? So basically changing to a different folder.
-
-```bash
-cd ~/projects
-```
-
-**Step 4:** You can now **clone** (create a local copy of) the `ds-prep-workspace` repository you created on `GitHub`.
-Replace `<username>` below with your `GitHub` username, removing the brackets `< >`, and run the command:
-
-```bash
-git clone https://github.com/<username>/ds-prep-workspace.git
-```
-
-   **Note**: if you have had a `GitHub` account since before this course and you are using `ssh keys` instead of `tokens`, first make sure that you have completed the steps starting [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys), then clone your repository like this. You can skip step 5 and continue with section 2.4.
-
-   ```bash
-   git clone git@github.com:<username>/ds-prep-workspace.git
-   ```
-
-**Step 5:** You'll be asked for your `GitHub` username. Type it and press <kbd>enter</kbd>. Then you'll be asked for your git password. Passwords no longer work for `GitHub`, you will need to use `tokens`.
-
-Go to <https://github.com/settings/tokens> and click on `Generate new token`. You can give it a name in the note field, such as `ldsa-token`. Then select `repo` in the scopes and click on `Generate token`. You will be shown a `token` you should save - **you will not be able to see it again after leaving that window**. 
-
-Now use the `token` instead of your password and press <kbd>enter</kbd>
-
-You should now have a local copy of your `ds-prep-workspace` in your `~/projects/ds-prep-workspace` folder.
-
-<img src='media/personal_access_token.PNG' width="75%" />
-
-### 2.4 Clone the `ds-prep-course-2023` repository
-
-Let's clone the [`ds-prep-course-2023`](https://github.com/LDSSA/ds-prep-course-2023) repository. This is where all of the learning materials will be made available as the prep course progresses. You will be getting them (pulling) from there.
-
-**Step 1:** Open a terminal (or use one you've already opened) and enter the `projects` folder:
+1. Clone the students repository.
+If you have your [**ssh keys set up**](#Setup-Git-and-GitHub) as instructed:
 
 ```bash
-cd ~/projects
+git clone git@github.com:<username>/batch7-workspace.git
 ```
 
-**Step 2:** Clone the Prep Course repository (it's the same that contains the README you're reading right now!):
+If for some reason you don't have the ssh key, do:
 
 ```bash
-git clone https://github.com/LDSSA/ds-prep-course-2023.git
+git clone https://github.com/<username>/batch7-workspace.git
 ```
 
-If you are using `ssh keys` for `GitHub`, use this command:
+### Get the Learning Material
+
+Now you will clone the [batch7-students](https://github.com/LDSSA/batch7-students)
+repository. All of the learning material will be made available on this repo
+as the academy progresses.
+
+1. Open a Terminal or Git Bash, the next steps are on this terminal
+1. Clone the students repository
+[batch7-students](https://github.com/LDSSA/batch7-students)
 
 ```bash
-git clone git@github.com:LDSSA/ds-prep-course-2023.git
-```
+git clone git@github.com:LDSSA/batch6-students.git```
 
-**Step 3:** Copy the `requirements.txt` file from the prep course repository to your local workspace repository. The `cp` bash command means **c**o**p**y.  Then you have the address of the file that is being copied and to where it is copied.
+Or if you don't have the ssh keys set up:
 
 ```bash
-cp ~/projects/ds-prep-course-2023/requirements.txt ~/projects/ds-prep-workspace
+git clone https://github.com/LDSSA/batch7-students.git
+
 ```
 
-And you're done with setting `Git` and `GitHub`! Go back to the main menu and continue with step 4, setting up the virtual environment.
+Your repo setup is ready now.
