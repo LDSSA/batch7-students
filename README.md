@@ -17,7 +17,7 @@ First and foremost, we'll talk about how to use our communication tool, Slack. Y
 <table>
   <tr>
     <td>
-         <a href="slack.md">
+         <a href="guides/slack.md">
             <img src="media/slack.png" alt="Slack" />
         </a>
     </td>
@@ -32,7 +32,7 @@ Please choose your operating system:
 <table>
   <tr>
     <td>
-        <a href="macOS.md">
+        <a href="guides/macOS.md">
             <img src="media/macOS.png" alt="MacOS" />
         </a>
     </td>
@@ -42,7 +42,7 @@ Please choose your operating system:
         </a>
     </td>
     <td>
-        <a href="LINUX.md">
+        <a href="guides/LINUX.md">
             <img src="media/linux.png" alt="Linux" />
         </a>
     </td>
@@ -57,7 +57,7 @@ Click on the image to follow the link.
 <table>
   <tr>
     <td>
-        <a href="github.md">
+        <a href="guides/github.md">
             <img src="media/github.png" alt="GitHub" />
         </a>
     </td>
@@ -72,7 +72,7 @@ Click on the image to follow the link.
 <table>
   <tr>
     <td>
-        <a href="python-venv.md">
+        <a href="guides/python-venv.md">
             <img src="media/python-venv.png" alt="python-venv" />
         </a>
     </td>
@@ -87,7 +87,7 @@ The workflow that you will follow every time that learning new material is relea
 <table>
   <tr>
     <td>
-        <a href="weekly-workflow.md">
+        <a href="guides/ldssa-workflow.md">
             <img src="media/ldssa.png" alt="ldssa-learning-units-workflow" height="300"/>
         </a>
     </td>
@@ -102,7 +102,7 @@ A few common problems and solutions. If you don't find what you're looking for, 
 <table>
   <tr>
     <td>
-        <a href="troubleshooting.md">
+        <a href="guides/troubleshooting.md">
             <img src="media/troubleshooting.png" alt="troubleshooting" />
         </a>
     </td>
