@@ -1,6 +1,6 @@
 # Set-up instructions for Windows 10/11
 
-Welcome to **Windows 10/11 set up** repository!
+Welcome to **Windows 10/11 set up** guide!
 
 Your first step in this journey is to **carefully read** the steps in this tutorial. You'll learn how to set up your computer. This section deals with setting up `Windows Subsystem for Linux` (WSL) on Windows 10/11. `Windows Subsystem for Linux (WSL)` enables you to run Linux command line inside Windows.
 
