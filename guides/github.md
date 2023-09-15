@@ -15,7 +15,7 @@ If you have a _GitHub_ account but git is not set up in your system, complete th
 1. [Adding a new SSH key to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 1. [Testing your SSH connection](https://help.github.com/en/github/authenticating-to-github/testing-your-ssh-connection)
 
-### Set Up your Workspace Repository
+### Set Up Your Workspace Repository
 
 The workspace directory/repository is where you will place everything you are working on, solve exercises, make changes to files, etc. In this academy that **is a requirement** as it is how you will make your work available to us.
 
@@ -24,7 +24,7 @@ The workspace directory/repository is where you will place everything you are wo
 1. Log into _GitHub_
 1. Create a new **private** _GitHub_ repository called *batch7-workspace*, see
 [Creating a new repository](https://help.github.com/en/articles/creating-a-new-repository).
-:warning: The repo **MUST** be named *batchX-workspace* where *X* is the current batch number! 
+:warning: The repo **MUST** be named *batch7-workspace*! 
 If you name it anything else, you will be unable to submit any of your work!
 
     1. You need to explicitly select **Private** - This is your work and you will be graded on it, so it should not be open to the world while you are working on it.
