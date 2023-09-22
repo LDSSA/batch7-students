@@ -4,9 +4,10 @@ Welcome to **Windows 10/11 set up** guide!
 
 Your first step in this journey is to **carefully read** the steps in this tutorial. You'll learn how to set up your computer. This section deals with setting up `Windows Subsystem for Linux` (WSL) on Windows 10/11. `Windows Subsystem for Linux (WSL)` enables you to run Linux command line inside Windows.
 
-**Step 1:** Follow **[this guide](guides/Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md)** to setup `WSL` on Windows 10/11.
+**Step 1:** Follow **[this guide](/Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md)** to setup `WSL` on Windows 10/11.
+***The main branch of batch7-students does not contain the path guides/guides/Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md.***
 
-**Step 2:** Open a terminal (remember **[this](guides/Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md#Opening-the-WSL-terminal)**!!) and run the following command. It will install `git`. `Git` is a version control software that facilitates collaboration of people working together on the same code and keeps track of the versions as the code changes. You will learn more about `git` in Week 02 of this course.
+**Step 2:** Open a terminal (remember **[this](/Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md#Opening-the-WSL-terminal)**!!) and run the following command. It will install `git`. `Git` is a version control software that facilitates collaboration of people working together on the same code and keeps track of the versions as the code changes. You will learn more about `git` in Week 02 of this course.
 
 ```bash
 sudo apt update && sudo apt upgrade && sudo apt install git
