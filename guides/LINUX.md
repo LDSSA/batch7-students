@@ -28,7 +28,7 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update && sudo apt install python3.10 -y
 ```
 
-**Step 2** Run the following command to get `pip` and `venv`. `pip` is a python package manager - it will help you easily install python packages. `venv` is a software for creating virtual environments (we will come back to what this means in the next set up step):
+**Step 2** Run the following command to get `pip` and `venv`. `pip` is a Python package manager - it will help you easily install Python packages. `venv` is a software for creating virtual environments (we will come back to what this means in the next set up step):
 
 ```bash
 sudo apt update && sudo apt upgrade && sudo apt install python3-pip python3.10-venv -y
