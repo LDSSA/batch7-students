@@ -1,8 +1,6 @@
-https://learn.microsoft.com/en-us/windows/wsl/install
-
 # Windows Subsystem for Linux Installation Guide for Windows 10 and 11
 
-## Make sure that Windows is up to date
+## 1. Make sure that Windows is up to date
 
 You must be running Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11 to use the commands below. If you are on Windows 10, follow this procedure to update your system:
 
@@ -22,7 +20,7 @@ After you're done installing those updates, please [check which OS build of Wind
 
 ![start](../media/os_build.png)
 
-## Install the Windows Subsystem for Linux
+## 2. Prepare Windows for WSL installation
 
 Before installing any Linux distributions for WSL, you must ensure that the `Windows Subsystem for Linux` optional feature is enabled:
 
@@ -47,9 +45,13 @@ and run it by pressing <kbd>enter</kbd>:
 3. Restart your computer if asked to.
 
 
-## Install Ubuntu
+## 3. Install WSL with Ubuntu 22.04
 
-1. Open this link to the [Microsoft Store](https://apps.microsoft.com/store/detail/ubuntu-22042-lts/9PN20MSR04DW) and select `Get` to install `Ubuntu`.
+1. Open the Power shell and run this: `wsl --install -d Ubuntu-22.04`
+
+1. If you get the x80370102 error when installing WSL, go to https://aka.ms.enablevirtualization and follow the steps, then try installing again.
+
+This step will be removed: 1. Open this link to the [Microsoft Store](https://apps.microsoft.com/store/detail/ubuntu-22042-lts/9PN20MSR04DW) and select `Get` to install `Ubuntu`.
 
 ## Launch Ubuntu
 To complete the initialization of your newly installed `Ubuntu`, launch a new instance. You can do this by typing `ubuntu` in your Windows search bar:
