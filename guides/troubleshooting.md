@@ -108,3 +108,6 @@ The `raise NotImplementedError()` is added to the exercise cell as a placeholder
 - [Setup guide for Mac](https://www.youtube.com/watch?v=qs0z4ibMFdU)
 - [Updates to Learning Units guide for Windows 10](https://www.youtube.com/watch?v=Q2Cezm6ufrE)
 - [Updates to Learning Units guide for Mac](https://www.youtube.com/watch?v=-fzIDfNBZ0I)
+
+### 10. Error 0x80370102 when installing WSL
+Go to https://aka.ms.enablevirtualization and follow the steps.
