@@ -1,80 +1,88 @@
 # LDSSA Learning Units
 
-## Running and Submitting a Learning Unit
+## 1. Structure of the batch7-students repository
+The repository has a directory for each specialization S01 - S06. Inside are the directories for the learning units. See the example below:
 
-In the `batch6-students` repository that you just cloned there is a sample
-learning unit.
-It's used to give instructors guidelines to produce the learning units.
-We are also using it to ensure that you are able to run and submit a learning
-unit.
-
-So go ahead and copy the sample directory `sample/SLU00 - LU Tutorial` from the `batch6-students` repository to your repository (named `batch6-workspace`).
-![Sample learning unit](assets/sample_learning_unit.png "Sample learning unit")
-
-The grader only requires you to have the contents in a directory starting with
-the learning unit's ID, but we highly advise to keep the same directory
-structure as the students repository.
-All learning units are organized as:
-
-```markdown
-<specialization ID> - <specialization name>/<learning unit ID> - <learnin unit name>
+```
+|--S01
+   |-- requirements.txt
+   |-- SLU01 - Pandas 101
+       |-- media
+           |-- some-image.csv
+       |-- data
+           |-- some-dataset.csv        
+       |-- Examples notebook.ipynb
+       |-- Exercise notebook.ipynb
+       |-- Learning notebook.ipynb
+       |-- README.md    
+   |-- SLU02 - Subsetting Data in Pandas
+       ...    
+   |-- SLU03 - Visualization with Pandas and Matplotlib   
+       ...           
 ```
 
-Doing so will help you keep organized and ease copying data from the students
-repository to yours.
+The learning unit directory naming follows the convention
 
-### Working on the Learning Unit
+```markdown
+<specialization ID> - <specialization name>/<learning unit ID> - <learning unit name>
+```
 
-All learning units come as a set of Jupyter Notebooks (and some links to
-presentations).
-Notebooks are documents that can contain text, images and live code that you
-can run interactively.
+The LU directory contains the `README` (a markdown file with the description of the unit), the `Learning notebook`, the `Exercise notebook`, and the `Examples notebook`. It may also contain a `media` directory with all the visual material, the `data` directory with the datasets, and a `utils.py` file with helper code.
 
-In this section we will launch the Jupyter Notebook application.
-The application is accessed through the web browser.
+The notebooks are all Jupyter notebooks, the same as you worked with during the admissions process. They contain text, interactive code, and tests for your solutions in the exercises.
 
-Once you have the application open feel free to explore the sample learning
-unit structure.
-It will give you a handle on what to expect and what rules the instructors
-follow (and the effort they put) when creating a learning unit.
+The `requirements.txt` file in each specialization directory contains the packages to be installed in the virtual environment. 
 
-So let's start the Jupyter Notebook app:
+Please keep this directory structure also in your workspace repository because the grader in the portal depends on it.
 
-1. Activate your virtual environment
+## 2. Working on a Learning Unit
 
-    ```bash
-    source ~/.virtualenvs/slu00/bin/activate
-    ```
+### 2.1 Create a virtual environment for the current specialization
+You will need a new virtual environment for every specialization. You have already created one for S01 during the previous setup steps. Here we will repeat some of those steps so that you have a complete guide for when you start each specialization.
+ 
+1. Open the terminal and create the virtual environment for the specialization:
 
-1. Enter the Learning unit directory in your workspace directory (`batch6-workspace`).
-    >Note: It is **VERY IMPORTANT** that you **ALWAYS** work on the files on your `batch6-workspace` repository, and **NEVER** work on files that are in your `batch6-students` repository!
+```bash
+python3.10 -m venv ~/.virtualenvs/s01
+```
+1. Activate the virtual environment of the specialization:
 
-    ```bash
-    cd ~/projects/batch6-workspace/sample/"SLU00 - LU Tutorial"
-    ```
+```bash
+source ~/.virtualenvs/s01/bin/activate
+```
 
-1. Installing the necessary packages
+1. Enter the directory of the specialization and install the requirements:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+cd ~/projects/batch7-workspace/"S01 - Bootcamp and Binary Classification"
+pip install -r requirements.txt
+```
 
-1. Run the jupyter notebook
-If you are running **WLS on Windows 10** run the following:
+You will see a lot of output on the terminal while pip installs the packages. You can also notice possible errors.
 
-    ```bash
-    jupyter notebook --NotebookApp.use_redirect_file=False
-    ```
+### 2.2 Launching the Jupyter notebook
 
-else:
+1. Enter the learning unit directory in your workspace directory (`batch7-workspace`).
+    >Note: It is **VERY IMPORTANT** that you **ALWAYS** work on the files on your `batch7-workspace` repository, and **NEVER** change the files in the `batch7-students` local repository! If you do change these files, you can have a merge conflict when you next pull from the GitHub repository.
+
+```bash
+cd ~/projects/batch7-workspace/"S01 - Bootcamp and Binary Classification"/"SLU01 - Pandas 101"
+```
+
+1. Run the jupyter notebook:
 
     ```bash
     jupyter notebook
     ```
+If the previous command does not work, use this one:
 
-When you run the `jupyter notebook` command, you should see something similar to this in your terminal:
+```bash
+jupyter notebook --NotebookApp.use_redirect_file=False
+```
+
+You should see something similar to this in your terminal:
 ![Open exercise notebook](assets/jupyter_terminal.png "Open exercise notebook")
-Your browser should pop up with Jupyter open, however, if this does not happen, you can simply copy the link you see on your terminal (the one that contains `localhost`) and past it in your browser's address bar:
+Your browser should pop up with Jupyter open, however, if this does not happen, you can simply copy the link you see on your terminal (the one that contains `localhost`) and paste it in your browser's address bar:
 
 ![Open exercise notebook](assets/jupyter_terminal_link.png "Open exercise notebook")
 
@@ -82,7 +90,9 @@ Your browser should pop up with Jupyter open, however, if this does not happen, 
 
 ![Open exercise notebook](assets/jupyter_error_red.png "Open exercise notebook")
 
-#### The Exercise Notebook
+You will also see a message about the update of the jupyter notebook, you can ignore it.
+
+### The Exercise Notebook
 
 Make sure you open and go through the Learning Notebook first.
 
@@ -98,7 +108,7 @@ Besides the exercises and the cells for you to write solutions you will see
 other cells with a series of `assert` statements.
 This is how we (and you) will determine if a solution is correct.
 If all `assert` statements pass, meaning you dont get an `AssertionError` or
-any other kind of exception, the solution is correct.
+any othe r kind of exception, the solution is correct.
 
 Once you've solved all of the notebook we recommend the following this simple
 checklist to avoid unexpected surprises.
@@ -140,7 +150,7 @@ git push
 1. If everything passes locally but the grader doesn't give you the excepted
 output head to out [troubleshooting](https://github.com/LDSSA/LDSA-setup/blob/main/troubleshooting.md)
 
-## Learning Unit Workflow
+## 2. Learning Unit Workflow
 
 You will need to follow this workflow whenever new learning materials are released.
 
