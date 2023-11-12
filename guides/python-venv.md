@@ -45,4 +45,4 @@ Now if you use the `which` command it should output the location of your virtual
 (s01) pip install -U pip
 ```
 
-And your done!
+And you're done!
