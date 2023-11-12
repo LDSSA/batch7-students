@@ -137,7 +137,7 @@ checklist to avoid unexpected surprises:
 
 1. Save the notebook (again)
 1. Run "Restart & Run All"
-![Restart & Run All](media/jupyter_clear_and_run.png "Restart & Run All")
+![Restart & Run All](/media/jupyter_clear_and_run.png "Restart & Run All")
 1. At this point the notebook should have run without any failing assertions
 
 If you want to submit your notebook before it is all the way done to
@@ -160,9 +160,9 @@ git push
 Now go to the portal and ask it to grade your notebook.
 
 1. Go to the [_Portal_](https://portal.lisbondatascience.org) and select the learning unit
-![Learning unit](media/portal_sample_lu.png "Learning unit")
+![Learning unit](/media/portal_sample_lu.png "Learning unit")
 1. Select "Grade"
-![Grade](media/portal_grade.png "Grade")
+![Grade](/media/portal_grade.png "Grade")
 1. You will see your grade, e.g. 20/20.
 1. If all the exercise asserts passed locally but the grader doesn't give you the expected
 output head to [troubleshooting](https://github.com/LDSSA/LDSA-setup/blob/main/troubleshooting.md)
@@ -221,7 +221,7 @@ effect)
 1. In the learning unit page in the [_Portal_](https://portal.lisbondatascience.org/)
 you are able to download the exercise notebook with the results of the grader
 by clicking on your grade. Have a look to figure out what went wrong.
-![Download notebook](media/portal_download_notebook.png "Download notebook")
+![Download notebook](/media/portal_download_notebook.png "Download notebook")
 If none of these steps helped go ahead and ask for help on Slack in the #devops channel.
 
 Is the _Portal_ down or acting out in some unexpected way? Please report it in the #devops channel on Slack.
