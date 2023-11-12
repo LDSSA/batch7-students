@@ -53,6 +53,10 @@ copy the deploy key including the `ssh-rsa` part.
 _Portal_
 ![Deploy keys](../media/deploy_key.png "Deploy key")
 
+#### 1.3 Add your Slack ID to the Portal
+
+As you're already in the portal, please add your SlackID to your profile. In your **Profile** in the **Portal**, besides your *GitHub Handle*, you should add your **SlackID**. You can find information on how to find it [following this link](https://moshfeu.medium.com/how-to-find-my-member-id-in-slack-workspace-d4bba942e38c)
+
 #### 1.3 Clone Your Workspace Repository
 
 1. Open a Terminal or Git Bash. The next steps are on this terminal.
