@@ -82,14 +82,14 @@ jupyter notebook --NotebookApp.use_redirect_file=False
 ```
 
 You should see something similar to this in your terminal:
-![Open exercise notebook](media/jupyter_terminal.png "Open exercise notebook")
+![Open exercise notebook](/media/jupyter_terminal.png "Open exercise notebook")
 Your browser should pop up with Jupyter open, however, if this does not happen, you can simply copy the link you see on your terminal (the one that contains `localhost`) and paste it in your browser's address bar:
 
-![Open exercise notebook](media/jupyter_terminal_link.png "Open exercise notebook")
+![Open exercise notebook](/media/jupyter_terminal_link.png "Open exercise notebook")
 
 >Note: If you see these scarry looking error messages, don't worry, you can just ignore them.
 
-![Open exercise notebook](media/jupyter_error_red.png "Open exercise notebook")
+![Open exercise notebook](/media/jupyter_error_red.png "Open exercise notebook")
 
 You will also see a message about the update of the jupyter notebook, you can ignore it.
 
