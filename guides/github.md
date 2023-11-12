@@ -25,7 +25,7 @@ The workspace directory/repository is where you will place everything you are wo
 1. Create a new **private** _GitHub_ repository called *batch7-workspace*, see
 [Creating a new repository](https://help.github.com/en/articles/creating-a-new-repository).
 :warning: The repo **MUST** be named *batch7-workspace*! 
-If you name it anything else, you will be unable to submit any of your work!
+If you name it anything else, you will be unable to submit any of your work for grading.
 
     1. You need to explicitly select **Private** - This is your work and you will be graded on it, so it should not be open to the world while you are working on it.
     1. Initialize with a README.
@@ -58,8 +58,7 @@ _Portal_
 1. Open a Terminal or Git Bash. The next steps are on this terminal.
 1. Clone your `<username>/batch7-workspace` repository. If you're not sure where to put the repository, you can create a `~/projects` folder, and clone it there.
 
-1. Clone the students repository.
-If you have your [**ssh keys set up**](#Setup-Git-and-GitHub) as instructed:
+1. If you have your [**ssh keys set up**](#Setup-Git-and-GitHub) as instructed (replace `<username>` with your GitHub username):
 
 ```bash
 git clone git@github.com:<username>/batch7-workspace.git
