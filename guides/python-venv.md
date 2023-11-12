@@ -25,7 +25,7 @@ python3.10 -m venv ~/.virtualenvs/s01
 source ~/.virtualenvs/s01/bin/activate
 ```
 
->Note: after you activate your virtual environment you should see at the left of your command line the name of your virtual environment surrounded by parenthesis, like this:
+>Note: after you activate your virtual environment you should see the name of your virtual environment surrounded by parenthesis at the beginning of your command line, like this:
 
 ```bash
 mig@my-machine % source ~/.virtualenvs/s01/bin/activate
