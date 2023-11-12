@@ -48,7 +48,7 @@ and run it by pressing <kbd>Enter</kbd>:
 
 1. We are installing the latest Ubuntu version with preinstalled Python 3.10. Open the Power shell and run this: `wsl --install -d Ubuntu-22.04` or go to the [Microsoft Store](https://apps.microsoft.com/store/detail/ubuntu-22042-lts/9PN20MSR04DW) and select `Get` to install `Ubuntu 22.04`.
 
-1. If you get the x80370102 error when installing WSL, go to [https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1] and follow the steps, then try installing again.
+1. If you get the x80370102 error when installing WSL, go [to](https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1) and follow the steps, then try installing again.
 
 ## 4. Launch Ubuntu 22.04
 To complete the initialization of your newly installed `Ubuntu 22.04`, launch a new instance. You can do this by typing `ubuntu` in your Windows search bar:
