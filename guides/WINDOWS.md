@@ -21,9 +21,7 @@ python3.10 --version
 then install libraries necessary for the installation of the virtual environment: 
 
 ```bash
-sudo apt-get update
-sudo apt-get install libpython3-dev
-sudo apt-get install python3-venv
+sudo apt install libpython3-dev
 
 ```
 
