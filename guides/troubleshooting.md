@@ -8,9 +8,9 @@
 [6. When setting up python 3.10 I get an error](#6-when-setting-up-python-310-i-get-an-error)   
 [7. Nothing happens when I type my password](#7-nothing-happens-when-i-type-my-password)   
 [8. I still have a NotImplemented error](#8-i-still-have-a-notimplemented-error)   
-[9. Tutorial videos from Prep Course 2020](#9-tutorial-videos-from-prep-course-2020)
-[10. Error 0x80370102 when installing WSL](#10-Error-0x80370102-when-installing-WSL)
-[11. Errors when installing WSL on Windows](#11-Errors-when-installing-WSL-on-Windows)
+[9. Tutorial videos from Prep Course 2020](#9-tutorial-videos-from-prep-course-2020)   
+[10. Error 0x80370102 when installing WSL](#10-Error-0x80370102-when-installing-WSL)   
+[11. Errors when installing WSL on Windows](#11-Errors-when-installing-WSL-on-Windows)   
 
 ### 1. When I open Windows Explorer through Ubuntu, it goes to a different folder than in the guide
 
