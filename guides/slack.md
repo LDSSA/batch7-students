@@ -9,11 +9,12 @@ Slack is our official communication channel. We will announce the release of the
 1. For your sanity, set how and when you want to be notified in `Preferences` -> `Notifications`.
 1. You can install the Slack app on your phone.
 1. Check if your question was already asked before posting.
-1. Use the channel of the learning unit you're asking about for questions about the learning material. Indicate the relevant section or exercise.
+1. Use the channel of the learning unit you're asking about for questions about the learning material. Indicate the relevant section or exercise. Using public channels for questions is better than asking by DM - more people will see your question and the chances of getting a good and quick answer are higher.
+1. Do not share code or answers in public channels. Describe your problem in case of questions and give hints if you are answering. If you really need to share code, do so by DM to an instructor.
 1. Use the #devops channel for technical questions.
 1. Always answer in a thread, it helps keep the conversations organized.
 1. Use `Shift`+`Enter` for newlines, just `Enter` will send the message.
-1. If you want to report bugs in the materials, you can open an issue on this [repo](https://github.com/LDSSA/batch7-students/issues/).
+1. If you want to report bugs in the materials, you can tell us on Slack or open an issue on this [repo](https://github.com/LDSSA/batch7-students/issues/).
 1. If you want to give feedback post it in the #feedback channel.
 1. Anything not related with the learning materials should go to the #random channel.
 
