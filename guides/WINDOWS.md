@@ -6,28 +6,25 @@ Your first step in this journey is to **carefully read** the steps in this tutor
 
 **Step 1:** Follow **[this guide](Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md)** to setup `WSL` on Windows 10/11.
 
-**Step 2:** Open a terminal (remember **[this](Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md#Opening-the-WSL-terminal)**!!) and run the following command. It will install `git`. `Git` is a version control software that facilitates collaboration of people working together on the same code and keeps track of the versions as the code changes. You will learn more about `git` in Week 02 of this course.
+**Step 2:** Open a terminal (remember **[this](Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md#5-opening-the-wsl-terminal)**!!) and run the following command. It will install `git`. `Git` is a version control software that facilitates collaboration of people working together on the same code and keeps track of the versions as the code changes. You will learn more about `git` in Week 02 of this course.
 
 ```bash
 sudo apt update && sudo apt upgrade && sudo apt install git
 ```
 
-**Step 3:** Open a terminal (remember **[this](Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md#Opening-the-WSL-terminal)**!!) and check if you already have `python3.10` by usind the command below. If your version is `Python 3.10.x` (`x` = any number), you can skip to step 4, otherwise continue with step 3.1 and 3.2.
+**Step 3:** Open a terminal (remember **[this](Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md#Opening-the-WSL-terminal)**!!) and confirm that you have `python3.10` with the command:
 
 ```bash
 python3.10 --version
 ```
 
-**Step 3.1:** Run the following commands to set up `Python 3.10` (if you get an error with this command, check [this](troubleshooting.md/#6-when-setting-up-python-38-i-get-an-error)). First, add the `deadsnakes repository` - a place from where you will download `Python 3.10`:
+then install libraries necessary for the installation of the virtual environment: 
 
 ```bash
-sudo add-apt-repository ppa:deadsnakes/ppa
-```
+sudo apt-get update
+sudo apt-get install libpython3-dev
+sudo apt-get install python3-venv
 
-**Step 3.2:** Run the following commands to install `Python 3.10`:
-
-```bash
-sudo apt update && sudo apt install python3.10 -y
 ```
 
 **Step 4** Run the following command to get `pip` and `venv`. `pip` is a package manager - it will help you easily install software. `venv` is a software for creating virtual environments (we will come back to what this means in the next set up step):
