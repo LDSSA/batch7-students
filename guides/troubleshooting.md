@@ -115,4 +115,4 @@ The `raise NotImplementedError()` is added to the exercise cell as a placeholder
 Follow the steps [here](https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1).
 
 ### 11. Errors when installing WSL on Windows
-See troubleshooting guide from [microsoft](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting).
+See the troubleshooting guide from [Microsoft](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting).
