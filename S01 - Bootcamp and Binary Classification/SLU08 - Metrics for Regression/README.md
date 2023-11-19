@@ -1,8 +1,5 @@
 # Small Learning Unit 08 - Metrics for regression
 
-
-#### [Presentation](https://docs.google.com/presentation/d/1G1bqXgk9ss1TZsyRnm_awSbYKw7VbDH1OAUuef14Ejw/edit?usp=sharing)
-
 # New concepts in this unit
 - Mean Absolute Error (MAE)
 - Mean Squared Error (MSE)
