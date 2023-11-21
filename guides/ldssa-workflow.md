@@ -150,7 +150,7 @@ Now you have worked on the exercise notebooks, you should commit the changes to 
 Using the terminal, commit and push the changes (from the LU directory):
 
 ```bash
-git add "Exercise notebook.ipynb"
+git add .
 git commit -m 'Completed SLU01'
 git push
 ```
