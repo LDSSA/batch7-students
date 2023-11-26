@@ -1,7 +1,5 @@
 # Small Learning Unit 11 - Tree-based Models
 
-#### [Presentation](https://docs.google.com/presentation/d/1DJsoJh_Vvv1Y6-ExufgRGHZzPdrTQbLzOVsH_gXbp-c/edit?usp=sharing)
-
 ## New concepts in this notebook
 - Rule-based systems
 - Decision trees
