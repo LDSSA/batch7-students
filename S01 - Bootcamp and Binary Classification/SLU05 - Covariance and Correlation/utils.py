@@ -36,7 +36,7 @@ def get_fathers_sons_outliers():
     # adding an outlier
     fathers_with_outliers = pd.read_csv('data/outlier_data.csv')
     sons_with_outliers = fathers_with_outliers.iloc[2:]
-    sons_with_outliers = sons_with_outliers['Sons']
+    sons_with_outliers = sons_with_outliers.reset_index()['Sons']
 
     return fathers, sons, sons_with_outliers
 
@@ -325,7 +325,10 @@ def plot_some_correlations(legend=False):
 
 def dirty_little_secret():
     text = '''
-    Ok, we tricked you, and it was unfair of us.
+    Ok, first the good news: You got a raise on your first day at the job!!! :)
+    
+    And now, the "not so good"...
+    we tricked you, and it was unfair of us.
 
     The reality is that this stock dataset was 100% RANDOM NUMBERS.
 
@@ -343,10 +346,8 @@ def dirty_little_secret():
     print(text)
 
 
-
 def _make_name(used_names):
     letters = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-
     while True:
         new_name = ''.join(np.random.choice(letters, 3))
         if new_name not in used_names:
@@ -367,7 +368,7 @@ def _make_random_data(n_rows, n_cols, max_val=50):
     return np.random.random(size=(n_rows, n_cols)) * 15
 
 
-def make_random_dataset(n_rows=100, n_cols=1000):
+def make_random_dataset(n_rows, n_cols):
     df = pd.DataFrame(_make_random_data(n_rows, n_cols),
                       index=_make_random_index(n_rows),
                       columns=_make_random_column_names(n_cols))
