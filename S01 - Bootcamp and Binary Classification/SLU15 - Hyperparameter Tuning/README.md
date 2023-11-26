@@ -4,8 +4,6 @@
 What are hyperparamters and how to search for best possible combinations;
 
 
-#### [Presentation](https://docs.google.com/presentation/d/1T2VLHNUjXI7oGxiqk6Ru_N1sni_9d_VqK3yrf1HAMxw/edit?usp=sharing)
-
 ### New concepts in this unit
 
 *  Hyperparameter definition
