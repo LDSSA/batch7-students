@@ -1,5 +1,7 @@
 # Small Learning Unit 4 - Basic Stats with Pandas
 
+#### [Presentation](https://docs.google.com/presentation/d/1n-ncrdRzh0qhXIiuNuWePM41sPcO1jY1/edit)
+
 ## New concepts in this notebook
 - count, sum & cumsum
 - unique & nunique
