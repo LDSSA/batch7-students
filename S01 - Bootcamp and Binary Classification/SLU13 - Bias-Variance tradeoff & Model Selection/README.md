@@ -1,6 +1,5 @@
 # SLU13 - Bias-Variance tradeoff & Model Selection
 
-#### [Presentation](https://docs.google.com/presentation/d/1xaABfvKzIpj7HqVZzRWe5ryKRD_yg1nIYoFaMgCBb9w/edit?usp=sharing)
 
 # New concepts in this unit
 
