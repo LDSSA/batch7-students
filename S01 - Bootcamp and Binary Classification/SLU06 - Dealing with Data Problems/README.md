@@ -1,5 +1,7 @@
 # Small Learning Unit 06 - Dealing with Data Problems
 
+[Presentation](https://docs.google.com/presentation/d/174X9m7WLq2puxHDX4Jf5MFpFox8ddo8dDIWlGXFB3C4/edit?usp=sharing)
+
 # New concepts in this unit
 
 - Introduction to data cleanup
