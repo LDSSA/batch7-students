@@ -1,6 +1,5 @@
 # Small Learning Unit 12 - Feature Engineering (aka Real World Data)
 
-#### [Presentation](https://docs.google.com/presentation/d/1p-YdqqiDddl-7mUeT_FgFw6sbLgi2hf0jLLkHlrnJ_k/edit?usp=sharing)
 
 # New concepts in this unit
 * Tidy data
