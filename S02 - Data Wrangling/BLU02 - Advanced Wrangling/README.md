@@ -97,4 +97,3 @@ Programs are under `/data/programs/`, arranged by season (i.e., each season as a
 | SoloistName       | string [object] | Soloist: Last name, First name                                  |
 | SoloistInstrument | string [object] | Soloist instrument played, singing voice or type of performance |
 | SoloistRole       | string [object] | "S" means "Soloist"; "A" means "Assisting Artist"               |
-
